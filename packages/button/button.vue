@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button>我是一个按钮</button>
+    <button class="ui button">
+      <slot>我是默认的内容</slot>
+    </button>
   </div>
 </template>
 
