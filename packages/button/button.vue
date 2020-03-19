@@ -41,6 +41,10 @@ export default {
     disabled: {
       type: Boolean,
       default: false
+    },
+    loading: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -48,6 +52,7 @@ export default {
       var classArr = [this.size]
       this.bkgColor && classArr.push('inverted' + ' ' + this.bkgColor)
       this.disabled && classArr.push('disabled')
+      this.loading && classArr.push('loading')
       return classArr.join(' ')
     }
   },

@@ -11,7 +11,7 @@
     <br />
     <my-button size="small" icon="volume up" bkgColor="purple">我是自定义的内容2</my-button>
     <br />
-    <my-button size="large" icon="video" bkgColor="olive">我是自定义的内容1</my-button>
+    <my-button size="large" icon="video" bkgColor="olive" loading>我是自定义的内容1</my-button>
     <br />
     <my-button size="massive" icon="coffee" bkgColor="blue">我是自定义的内容2</my-button>
   </div>
