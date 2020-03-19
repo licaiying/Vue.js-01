@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="ui button" :class="cClass">
+    <button class="ui button" :class="cClass" @click="outClick()">
       <template v-if="animated">
         <!-- 必须判断是否有动画，如果有，还需判断是哪种动画 -->
         <!-- $slots:可以获得所有的动画类型 -->
@@ -78,6 +78,11 @@ export default {
   },
   data () {
     return {}
+  },
+  methods: {
+    outClick () {
+      this.$emit('click')
+    }
   }
 }
 </script>

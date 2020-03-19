@@ -7,9 +7,9 @@
     <br />
     <my-button size="small" icon="deaf" bkgColor="green">我是自定义的内容2</my-button>
     <br />
-    <my-button size="massive" icon="sign language" bkgColor="violet" disabled>我是自定义的内容1</my-button>
+    <my-button size="massive" icon="sign language" bkgColor="violet" @click="hClick()">我是自定义的内容1</my-button>
     <br />
-    <my-button size="small" icon="volume up" bkgColor="purple">我是自定义的内容2</my-button>
+    <my-button size="small" icon="volume up" bkgColor="purple" @click="hClick()">我是自定义的内容2</my-button>
     <br />
     <my-button size="large" icon="video" bkgColor="olive" loading>我是自定义的内容1</my-button>
     <br />
@@ -30,3 +30,14 @@
     </my-button>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'About',
+  methods: {
+    hClick () {
+      alert(789456123)
+    }
+  }
+}
+</script>
