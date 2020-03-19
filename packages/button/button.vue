@@ -1,8 +1,20 @@
 <template>
   <div>
     <button class="ui button" :class="cClass">
-      <i v-if="icon" class="icon" :class="icon"></i>
-      <slot>我是默认的内容</slot>
+      <template v-if="animated">
+        <!-- 必须判断是否有动画，如果有，还需判断是哪种动画 -->
+        <!-- $slots:可以获得所有的动画类型 -->
+        <div v-if="$slots.hidden" class="hidden content">
+          <slot name="hidden"></slot>
+        </div>
+        <div v-if="$slots.visible" class="visible content">
+          <slot name="visible"></slot>
+        </div>
+      </template>
+      <template v-else>
+        <i v-if="icon" class="icon" :class="icon"></i>
+        <slot>我是默认的内容</slot>
+      </template>
     </button>
   </div>
 </template>
@@ -45,7 +57,14 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    animated: {
+      type: String,
+      default: ''
     }
+  },
+  created () {
+    // console.log(this.$slots)  // 可以获得所有的动画类型
   },
   computed: {
     cClass () {
@@ -53,6 +72,7 @@ export default {
       this.bkgColor && classArr.push('inverted' + ' ' + this.bkgColor)
       this.disabled && classArr.push('disabled')
       this.loading && classArr.push('loading')
+      this.animated && classArr.push(`animated ${this.animated}`)
       return classArr.join(' ')
     }
   },

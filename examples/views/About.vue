@@ -14,5 +14,19 @@
     <my-button size="large" icon="video" bkgColor="olive" loading>我是自定义的内容1</my-button>
     <br />
     <my-button size="massive" icon="coffee" bkgColor="blue">我是自定义的内容2</my-button>
+    <br />
+    <my-button animated="vertical">
+      <div slot="hidden">$10000</div>
+      <div slot="visible">
+        <i class="shop icon"></i>不要错过哈
+      </div>
+    </my-button>
+    <br />
+    <my-button animated="fade">
+      <div slot="hidden">$10000</div>
+      <div slot="visible">
+        <i class="shop icon"></i>不要错过哈
+      </div>
+    </my-button>
   </div>
 </template>
