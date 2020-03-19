@@ -37,13 +37,18 @@ export default {
     bkgColor: {
       type: String,
       required: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
     cClass () {
       var classArr = [this.size]
       this.bkgColor && classArr.push('inverted' + ' ' + this.bkgColor)
-      return classArr.join('')
+      this.disabled && classArr.push('disabled')
+      return classArr.join(' ')
     }
   },
   data () {

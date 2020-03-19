@@ -3,11 +3,11 @@
     <my-headline></my-headline>
     <my-button></my-button>
     <br />
-    <my-button size="large" icon="tty" bkgColor="orange">我是自定义的内容1</my-button>
+    <my-button size="large" icon="tty" bkgColor="orange" disabled>我是自定义的内容1</my-button>
     <br />
     <my-button size="small" icon="deaf" bkgColor="green">我是自定义的内容2</my-button>
     <br />
-    <my-button size="massive" icon="sign language" bkgColor="violet">我是自定义的内容1</my-button>
+    <my-button size="massive" icon="sign language" bkgColor="violet" disabled>我是自定义的内容1</my-button>
     <br />
     <my-button size="small" icon="volume up" bkgColor="purple">我是自定义的内容2</my-button>
     <br />
