@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="ui button" :class="size">
+    <button class="ui button" :class="cClass">
       <i v-if="icon" class="icon" :class="icon"></i>
       <slot>我是默认的内容</slot>
     </button>
@@ -33,6 +33,17 @@ export default {
     icon: {
       type: String,
       required: false
+    },
+    bkgColor: {
+      type: String,
+      required: false
+    }
+  },
+  computed: {
+    cClass () {
+      var classArr = [this.size]
+      this.bkgColor && classArr.push('inverted' + ' ' + this.bkgColor)
+      return classArr.join('')
     }
   },
   data () {
