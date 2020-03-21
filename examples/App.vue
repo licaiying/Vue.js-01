@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/pageDivider">测试分割条(divider)</router-link>
+      <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>|
+      <router-link to="/pageDivider">测试分割条(divider)</router-link>|
+      <router-link to="/pageSlider">测试轮播图(slider)</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
