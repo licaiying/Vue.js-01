@@ -1,8 +1,8 @@
 {
   "name": "ui-lcy-vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
-  "main": "lib/lcy-vue.umd.min.js",
+  "main": "lib/ui-lcy-vue.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
