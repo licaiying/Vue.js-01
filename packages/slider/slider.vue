@@ -7,7 +7,7 @@
           class="slider-item"
           v-show="index===currentindex"
           v-for="(item,index) in list"
-          :key="index"
+          :key="item.url"
         >
           <img :src="item.url" :alt="item.alt" />
         </div>
