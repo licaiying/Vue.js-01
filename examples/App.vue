@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link>|
       <router-link to="/pageDivider">测试分割条(divider)</router-link>|
       <router-link to="/pageSlider">测试轮播图(slider)</router-link> |
-      <router-link to="/pageHeadline">测试标题(headline)</router-link>
+      <router-link to="/pageHeadline">测试标题(headline)</router-link> |
+      <router-link to="/pageDialog">测试对话框(dialog)</router-link>
     </div>
     <router-view />
   </div>
